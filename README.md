@@ -55,12 +55,12 @@ A packet sniffer for capturing and analyzing network traffic.
 
 - **Usage**:
 ```
-python netspy.py [-i <interface>] [-p <protocol>] [-c <count>] [--payload]
+python3 netspy.py [-i <interface>] [-p <protocol>] [-c <count>] [--payload]
 ```
 
 Example:
 ```
-python netspy.py -i eth0 -p TCP --payload
+python3 netspy.py -i eth0 -p TCP --payload
 ```
 
 Requirements
@@ -70,15 +70,17 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Dependencies
-colorama: For colorized terminal output.
-tqdm: For progress bars in Hashcracker.py.
-Notes
-Hashcracker: Ensure the wordlist file exists and is accessible.
-Port Scanner: Requires network access to the target host.
-Packet Sniffer: Requires root/admin privileges to capture packets.
-License
+- **Dependencies**
+  - colorama: For colorized terminal output.
+  - tqdm: For progress bars in Hashcracker.py.
+
+- **Notes**
+  - Hashcracker: Ensure the wordlist file exists and is accessible.
+  - Port Scanner: Requires network access to the target host.
+  - Packet Sniffer: Requires root/admin (linux) privileges to capture packets.
+
+### License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Author
+### Author
 Developed by Michael Mireku.
